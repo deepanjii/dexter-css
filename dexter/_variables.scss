@@ -1,11 +1,26 @@
 // theme colors
 $color-primary: #326dee;
 $color-secondary: #1ac888;
-$color-white-1: #fff;
-$color-white-2: #ddd;
-$color-black-1: #000;
+$color-white: #fff;
+$color-black: #000;
 $color-error: #d32752;
 $color-info: #f6c31c;
+$color-btn-default: #e2e2e2;
+
+// color palette
+$colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "error": $color-error,
+  "info": $color-info,
+  "white": $color-white,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "black": $color-black
+);
 
 // border, padding and margin variables
 $base-margin: 0.75rem;
@@ -14,7 +29,7 @@ $base-padding: 0.75rem;
 $base-border-size: 1px;
 $base-border-radius: 20px;
 
-$base-box-shadow: 1px 3px 5px rgba($color-black-1, .1);
+$base-box-shadow: 1px 3px 5px rgba($color-black, .1);
 
 $base-font-size: 1rem;
 $font-size-sm: $base-font-size * 0.8;

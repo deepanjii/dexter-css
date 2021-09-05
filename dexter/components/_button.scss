@@ -1,0 +1,26 @@
+.btn {
+  @include btn;
+
+  &--animated {
+    transition: all .2s;
+  }
+}
+
+@each $key, $val in $colors {
+  .btn-#{$key} {
+    @include btn($val);
+
+    &:hover {
+      background-color: lighten($color: $val, $amount: 10);
+    }
+  }
+
+  .btn-outlined-#{$key} {
+    @include btn($color-white);
+    border: $base-border-size solid $val;
+
+    &:hover {
+      background-color: $val;
+    }
+  }
+}

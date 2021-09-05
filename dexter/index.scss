@@ -1,13 +1,15 @@
 // variables and functions
 @import 'variables';
+@import 'abstract/mixins';
 
 // base and layout
 @import 'base';
 
 // colors
-
+@import 'colors';
 
 // components (button, image)
-@import 'components/card'
+@import 'components/button';
+@import 'components/card';
 
 // utilities (margin, padding, opacity)
