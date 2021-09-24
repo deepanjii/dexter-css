@@ -166,11 +166,11 @@ $utilities: (
   @each $key, $value in $values {
     @if($key == "default") {
       .#{$prefix} {
-        #{$property}: $value;
+        #{$property}: $value !important;
       }
     } @else {
       .#{$prefix}-#{$key} {
-        #{$property}: $value;
+        #{$property}: $value !important;
       }
     }
   }
